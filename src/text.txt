@@ -1,0 +1,18 @@
+  {
+            display?.map((items)=>(
+<tr >
+            <td>{items.id}</td>
+            <td className='d-flex justify-content-between'> 
+               {items.task}
+              
+                     <button style={{border:"none",outline:"none"}}onClick={(e)=>removeTask(items.id)}> <i class="fa-solid fa-trash text-danger"style={{border:"none",outline:"none"}}></i></button>
+                
+          
+               
+                   </td>
+            <td>{items.time}</td>
+        </tr>
+            ))
+            
+ 
+        }
